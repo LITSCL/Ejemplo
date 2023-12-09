@@ -34,7 +34,7 @@ public class SumarControlador extends HttpServlet {
 		int numero1 = Integer.parseInt(request.getParameter("numero1"));
 		int numero2 = Integer.parseInt(request.getParameter("numero2"));
 		int resultadoSuma = servicioLocal.sumar(numero1, numero2);
-		request.setAttribute("resultadoSuma", resultadoSuma); //este método permite comunicar un JSP con un Servlet.
+		request.setAttribute("resultadoSuma", resultadoSuma); //este mÃ©todo permite comunicar un JSP con un Servlet.
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
